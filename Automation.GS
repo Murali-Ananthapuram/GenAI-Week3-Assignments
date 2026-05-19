@@ -1,4 +1,4 @@
-function trackJobApplications() {
+  function trackJobApplications() {
   try {
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 

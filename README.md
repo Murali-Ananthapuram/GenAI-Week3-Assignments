@@ -35,3 +35,57 @@ Do not simply rewrite the whole resume first. First give feedback in sections:
 Use simple language. Be encouraging but honest. Give practical examples. If the resume is for an entry-level role, suggest wording that does not exaggerate experience.
 
 If the user asks, rewrite the resume summary, skills section, or work experience bullet points.
+---
+
+# Assignment 2: Google Apps Script Automation
+
+## Project Name
+Job Application Tracker Automation
+
+## Objective
+The objective of this project is to create an automation using Google Apps Script to improve productivity by tracking job application-related emails from Gmail into Google Sheets.
+
+## Google Workspace Services Used
+- Gmail
+- Google Sheets
+
+## Project Explanation
+This automation searches Gmail for job-related emails using keywords such as "job application", "application received", "interview", "recruiter", "position", and "thank you for applying".
+
+When matching emails are found, the script extracts important details and stores them in a Google Sheet.
+
+The details recorded are:
+- Date
+- Sender
+- Subject
+- Email snippet
+- Gmail link
+
+## Automation Workflow
+1. The user creates a Google Sheet called Job Application Tracker.
+2. The user adds headings: Date, Sender, Subject, Snippet, Gmail Link.
+3. The Apps Script code searches Gmail for job-related emails.
+4. Matching emails are added to the Google Sheet.
+5. The script checks existing Gmail links to avoid duplicate entries.
+6. A time-driven trigger can be added to run the automation daily.
+
+## Error Handling
+The script uses a try...catch block to handle errors. If an error occurs, it records the error message in the Apps Script log and shows an alert to the user.
+
+## How to Use
+1. Open Google Sheets.
+2. Create a sheet named Job Application Tracker.
+3. Add headings: Date, Sender, Subject, Snippet, Gmail Link.
+4. Go to Extensions → Apps Script.
+5. Paste the code from Automation.GS.
+6. Run the function trackJobApplications.
+7. Allow the required permissions.
+8. Check the Google Sheet for tracked job application emails.
+
+## Demo Evidence
+Screenshots should include:
+- Google Sheet headings
+- Apps Script code
+- Successful script run
+- Trigger setup
+- Google Sheet after data is added
